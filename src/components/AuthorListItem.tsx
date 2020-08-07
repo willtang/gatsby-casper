@@ -57,8 +57,9 @@ export const AuthorListItem: React.FC<AuthorListItemProps> = props => {
               <h2>{props.author.id}</h2>
               <p>{props.author.bio}</p>
               <p>
-                <Link to={`/author/${_.kebabCase(props.author.id)}/`}>More posts</Link> by{' '}
-                {props.author.id}.
+                <Link to={`/author/${_.kebabCase(props.author.id)}/`}>
+                  更多 {props.author.id} 的文章
+                </Link>
               </p>
             </div>
           </div>

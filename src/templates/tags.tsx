@@ -56,9 +56,7 @@ interface TagTemplateProps {
 const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
   const tag = pageContext.tag ? pageContext.tag : '';
   const { edges, totalCount } = data.allMarkdownRemark;
-  const tagData = data.allTagYaml.edges.find(
-    n => n.node.id.toLowerCase() === tag.toLowerCase(),
-  );
+  const tagData = data.allTagYaml.edges.find(n => n.node.id.toLowerCase() === tag.toLowerCase());
 
   return (
     <IndexLayout>
@@ -84,10 +82,7 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
         )}
       </Helmet>
       <Wrapper>
-        <header
-          className="site-archive-header"
-          css={[SiteHeader, SiteArchiveHeader]}
-        >
+        <header className="site-archive-header" css={[SiteHeader, SiteArchiveHeader]}>
           <div css={[outer, SiteNavMain]}>
             <div css={inner}>
               <SiteNav isHome={false} />
@@ -105,9 +100,9 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
                   tagData.node.description
                 ) : (
                   <>
-                    A collection of {totalCount > 1 && `${totalCount} posts`}
-                    {totalCount === 1 && '1 post'}
-                    {totalCount === 0 && 'No posts'}
+                    {totalCount > 1 && `${totalCount} 篇文章`}
+                    {totalCount === 1 && '1 篇文章'}
+                    {totalCount === 0 && '沒有文章'}
                   </>
                 )}
               </SiteDescription>

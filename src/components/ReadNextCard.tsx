@@ -67,9 +67,9 @@ export const ReadNextCard: React.FC<ReadNextProps> = props => {
       </ReadNextCardContent>
       <ReadNextCardFooter className="read-next-card-footer">
         <Link to={`/tags/${_.kebabCase(props.tags[0])}/`}>
-          {props.relatedPosts.totalCount > 1 && `See all ${props.relatedPosts.totalCount} posts`}
-          {props.relatedPosts.totalCount === 1 && '1 post'}
-          {props.relatedPosts.totalCount === 0 && 'No posts'} →
+          {props.relatedPosts.totalCount > 1 && `看所有 ${props.relatedPosts.totalCount} 篇文章`}
+          {props.relatedPosts.totalCount === 1 && '1 文章'}
+          {props.relatedPosts.totalCount === 0 && '沒有文章'} →
         </Link>
       </ReadNextCardFooter>
     </ReadNextCardArticle>

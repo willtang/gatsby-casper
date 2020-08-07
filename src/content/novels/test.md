@@ -5,8 +5,8 @@ image: ../img/testimg-cover.jpg
 author: [Will]
 date: 2020-08-07T12:00:00.000Z
 tags:
-  - Novels
-  - Tests
+  - 小說
+excerpt: Test on the novel.
 ---
 
 Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.

@@ -142,9 +142,9 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
                       </div>
                     )}
                     <div className="author-stats" css={[HiddenMobile]}>
-                      {totalCount > 1 && `${totalCount} posts`}
-                      {totalCount === 1 && '1 post'}
-                      {totalCount === 0 && 'No posts'}
+                      {totalCount > 1 && `${totalCount} 篇文章`}
+                      {totalCount === 1 && '1 篇文章'}
+                      {totalCount === 0 && '沒有文章'}
                     </div>
                     {author.website && (
                       <AuthorSocialLink className="author-social-link">
@@ -153,7 +153,7 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          Website
+                          網頁
                         </AuthorSocialLinkAnchor>
                       </AuthorSocialLink>
                     )}
