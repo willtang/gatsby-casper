@@ -1,10 +1,11 @@
 ---
 layout: post
 title: 測試
-image: img/testimg-cover.jpg
+image: ../img/testimg-cover.jpg
 author: [Will]
 date: 2020-08-07T12:00:00.000Z
 tags:
+  - Novels
   - Tests
 ---
 

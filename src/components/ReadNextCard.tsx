@@ -29,7 +29,9 @@ export interface ReadNextProps {
 
 export const ReadNextCard: React.FC<ReadNextProps> = props => {
   // filter out current post and limit to 3 related posts
-  const relatedPosts = props.relatedPosts.edges.filter(post => post.node.fields.slug !== props.currentPageSlug).slice(0, 3);
+  const relatedPosts = props.relatedPosts.edges
+    .filter(post => post.node.fields.slug !== props.currentPageSlug)
+    .slice(0, 3);
 
   return (
     <ReadNextCardArticle className="read-next-card">
@@ -54,8 +56,8 @@ export const ReadNextCard: React.FC<ReadNextProps> = props => {
                 </h4>
                 <ReadNextCardMeta className="read-next-card-meta">
                   <p>
-                    <time dateTime={datetime}>{displayDatetime}</time> - {n.node.timeToRead} min
-                    read
+                    <time dateTime={datetime}>{displayDatetime}</time> - {n.node.timeToRead}
+                    分鐘閱讀時間
                   </p>
                 </ReadNextCardMeta>
               </li>

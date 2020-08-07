@@ -277,8 +277,9 @@ const IndexLayout: React.FC<IndexProps> = props => {
           body {
             overflow-x: hidden;
             color: ${lighten('-0.3', colors.midgrey)};
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-              Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, Poppins, Arial, Helvetica, 文泉驛正黑,
+              'WenQuanYi Zen Hei', '儷黑 Pro', 'LiHei Pro', 微軟正黑體, 'Microsoft JhengHei',
+              'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1.6rem;
             line-height: 1.6em;
             font-weight: 400;

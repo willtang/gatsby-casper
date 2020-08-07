@@ -89,14 +89,14 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
             <ul css={NavStyles} role="menu">
               {/* TODO: mark current nav item - add class nav-current */}
               <li role="menuitem">
-                <Link to="/">Home</Link>
+                <Link to="/">首頁</Link>
               </li>
               <li role="menuitem">
-                <Link to="/about">About</Link>
+                <Link to="/about">關於我</Link>
               </li>
-              <li role="menuitem">
+              {/* <li role="menuitem">
                 <Link to="/tags/getting-started/">Getting Started</Link>
-              </li>
+              </li> */}
             </ul>
             {isPost && (
               <NavPostTitle ref={this.titleRef} className="nav-post-title">
