@@ -13,6 +13,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sitemap',
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://goodwill.dev',
+        sitemap: 'https://goodwill.dev/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-sharp',
       options: {
         quality: 100,
@@ -87,5 +95,6 @@ module.exports = {
         siteSpeedSampleRate: 10,
       },
     },
+    'gatsby-plugin-sass',
   ],
 };
