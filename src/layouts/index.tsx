@@ -131,7 +131,9 @@ const IndexLayout: React.FC<IndexProps> = props => {
           }
           html {
             box-sizing: border-box;
-            font-family: sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, Poppins, Arial, Helvetica, 文泉驛正黑,
+              'WenQuanYi Zen Hei', '儷黑 Pro', 'LiHei Pro', 微軟正黑體, 'Microsoft JhengHei',
+              'Open Sans', 'Helvetica Neue', sans-serif;
 
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;

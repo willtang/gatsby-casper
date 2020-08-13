@@ -95,7 +95,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 <Link to="/about">關於我</Link>
               </li> */}
               {/* <li role="menuitem">
-                <Link to="/tags/getting-started/">Getting Started</Link>
+                <Link to="/tags/getting-started/">開始</Link>
               </li> */}
             </ul>
             {isPost && (
@@ -131,9 +131,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
               </a>
             )}
           </SocialLinks>
-          {config.showSubscribe && (
-            <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
-          )}
+          {config.showSubscribe && <SubscribeButton onClick={this.openModal}>訂閱</SubscribeButton>}
           {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         </SiteNavRight>
       </nav>

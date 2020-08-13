@@ -317,7 +317,9 @@ const PostFullTags = styled.section`
 const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
   color: var(--midgrey);
-  font-family: Georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, Poppins, Arial, Helvetica, 文泉驛正黑,
+    'WenQuanYi Zen Hei', '儷黑 Pro', 'LiHei Pro', 微軟正黑體, 'Microsoft JhengHei', 'Open Sans',
+    'Helvetica Neue', sans-serif;
   font-size: 2.3rem;
   line-height: 1.4em;
   font-weight: 300;

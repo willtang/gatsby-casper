@@ -204,7 +204,9 @@ const PostCardTitle = styled.h2`
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: Georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, Poppins, Arial, Helvetica, 文泉驛正黑,
+    'WenQuanYi Zen Hei', '儷黑 Pro', 'LiHei Pro', 微軟正黑體, 'Microsoft JhengHei', 'Open Sans',
+    'Helvetica Neue', sans-serif;
 
   @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */
